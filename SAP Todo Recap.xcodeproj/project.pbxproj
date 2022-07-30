@@ -11,6 +11,7 @@
 		2FD7F7E82894C63700535C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7F7E72894C63700535C57 /* ContentView.swift */; };
 		2FD7F7EA2894C63900535C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F7E92894C63900535C57 /* Assets.xcassets */; };
 		2FD7F7ED2894C63900535C57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F7EC2894C63900535C57 /* Preview Assets.xcassets */; };
+		2FD7F7F42894C7DB00535C57 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7F7F32894C7DB00535C57 /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2FD7F7E72894C63700535C57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FD7F7E92894C63900535C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD7F7EC2894C63900535C57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FD7F7F32894C7DB00535C57 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		2FD7F7D92894C63700535C57 = {
 			isa = PBXGroup;
 			children = (
+				2FD7F7F32894C7DB00535C57 /* TodoItem.swift */,
 				2FD7F7E42894C63700535C57 /* SAP Todo Recap */,
 				2FD7F7E32894C63700535C57 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD7F7E82894C63700535C57 /* ContentView.swift in Sources */,
+				2FD7F7F42894C7DB00535C57 /* TodoItem.swift in Sources */,
 				2FD7F7E62894C63700535C57 /* SAP_Todo_RecapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

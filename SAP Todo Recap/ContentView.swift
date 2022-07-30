@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var todoItems = [
+        TodoItem(title: "Walk the chicken"),
+        TodoItem(title: "Feed the potato"),
+        TodoItem(title: "Scam the class"),
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(todoItems) { todoItem in
+            Text(todoItems.title)
+            
+        }
     }
 }
 
