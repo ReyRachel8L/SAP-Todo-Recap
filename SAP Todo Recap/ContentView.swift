@@ -17,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         List(todoItems) { todoItem in
-            Text(todoItems.title)
+            Text(todoItem.title)
             
         }
     }
