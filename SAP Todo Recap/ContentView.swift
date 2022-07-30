@@ -17,10 +17,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(todoItems) { todoItem in
-                NavigationLink(destination: TodoDetailView()) {
+            List($todoItems) { $todoItem in
+                NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
                     HStack {
-                        Image(systemName: todoItem.isDone ? "pawprint.circle.fill" : "pawprint.circle")
+                        Image(systemName: todoItem.isDone ? "bolt.circle" : "bolt.circle.fill")
                         Text(todoItem.title)
                     }
                 }
