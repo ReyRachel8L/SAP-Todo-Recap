@@ -9,16 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var todoItems = [
-        TodoItem(title: "Walk the chicken"),
-        TodoItem(title: "Feed the potato"),
-        TodoItem(title: "Scam the class"),
+    @State var todoItems = [
+        TodoItem(title: "SST Inc"),
+        TodoItem(title: "SAP"),
+        TodoItem(title: "SST CM", isDone: true),
     ]
     
     var body: some View {
-        List(todoItems) { todoItem in
-            Text(todoItem.title)
-            
+        NavigationView {
+            List(todoItems) { todoItem in
+                NavigationLink(destination: TodoDetailView()) {
+                    HStack {
+                        Image(systemName: todoItem.isDone ? "pawprint.circle.fill" : "pawprint.circle")
+                        Text(todoItem.title)
+                    }
+                }
+            }
+            .navigationTitle("Todos") // .navigationBarHidden(true)
         }
     }
 }
